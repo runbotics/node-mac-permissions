@@ -26,6 +26,9 @@ jobs:
     needs:
       - test
     runs-on: macos-11
+    permissions:
+      contents: read
+      packages: write
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v3
